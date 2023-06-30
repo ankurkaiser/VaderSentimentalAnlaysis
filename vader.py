@@ -14,7 +14,7 @@ Original file is located at
 #sid = SentimentIntensityAnalyzer()
 
 #nltk.download('vader_lexicon')
-
+pip install nltk
 import streamlit as st
 import nltk
 nltk.download('vader_lexicon')
