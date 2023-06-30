@@ -7,14 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1m7r7eC4th4O1KGzj1YFTxy7aAH2DkqQ3
 """
 
-import streamlit as st
-import subprocess
 
-# Install necessary dependencies
-subprocess.call(["pip", "install", "nltk"])
 import nltk
-nltk.download('vader_lexicon')
-
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 # Function to perform sentiment analysis
@@ -40,15 +34,25 @@ def analyze_sentiment(sentence):
     else:
         st.write("Neutral")
 
+
 # Streamlit app
 def main():
     st.title("Sentiment Analysis Tool")
     sentence = st.text_input("Enter a sentence")
     if sentence:
-        analyze_sentiment(sentence)
+        # Create an empty output box
+        output = st.empty()
+
+        # Perform sentiment analysis and update output box
+        with output:
+            analyze_sentiment(sentence)
+
+        # Reset the input sentence
+        st.text_input("Enter a sentence")
+
 
 if __name__ == "__main__":
     main()
 
-#!pip install streamlit
+
 
