@@ -6,7 +6,7 @@ subprocess.call(["pip", "install", "nltk"])
 import nltk
 nltk.download('vader_lexicon')
 
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 # Function to perform sentiment analysis
 def analyze_sentiment(sentence):
