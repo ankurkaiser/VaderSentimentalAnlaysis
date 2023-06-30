@@ -7,14 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1m7r7eC4th4O1KGzj1YFTxy7aAH2DkqQ3
 """
 
-#import nltk
 
-#from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
-#sid = SentimentIntensityAnalyzer()
-
-#nltk.download('vader_lexicon')
-pip install nltk
 import streamlit as st
 import nltk
 nltk.download('vader_lexicon')
