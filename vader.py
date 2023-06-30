@@ -35,10 +35,9 @@ def analyze_sentiment(sentence):
         st.write("Neutral")
 
 
-# Streamlit app
 def main():
     st.title("Sentiment Analysis Tool")
-    sentence = st.text_input("Enter a sentence")
+    sentence = st.text_input("Enter a sentence", key="input_sentence")
     if sentence:
         # Create an empty output box
         output = st.empty()
@@ -48,9 +47,8 @@ def main():
             analyze_sentiment(sentence)
 
         # Reset the input sentence
-        st.text_input("Enter a sentence")
-
-
+        sentence = st.text_input("Enter a sentence", key="input_sentence")
+        
 if __name__ == "__main__":
     main()
 
