@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1m7r7eC4th4O1KGzj1YFTxy7aAH2DkqQ3
 """
 
-
+import streamlit as st
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
