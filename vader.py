@@ -4,7 +4,7 @@ import subprocess
 # Install necessary dependencies
 subprocess.call(["pip", "install", "nltk"])
 import nltk
-nltk.download('vader_lexicon')
+#nltk.download('vader_lexicon')
 
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
@@ -36,15 +36,7 @@ def main():
     st.title("Sentiment Analysis Tool")
     sentence = st.text_input("Enter a sentence")
     if sentence:
-        # Create an empty output box
-        output = st.empty()
-
-        # Perform sentiment analysis and update output box
-        with output:
-            analyze_sentiment(sentence)
-
-        # Reset the input sentence
-        st.text_input("Enter a sentence")
+        analyze_sentiment(sentence)
 
 if __name__ == "__main__":
     main()
