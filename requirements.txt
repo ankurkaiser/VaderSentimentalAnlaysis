@@ -1,4 +1,4 @@
 nltk
 streamlit
-wordcloud
-nltk.punkt
+
+
