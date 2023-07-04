@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 # Download necessary resources
 nltk.download('vader_lexicon')
+nltk.download('punkt') 
 nltk.download('averaged_perceptron_tagger')
 
 # Function to perform sentiment analysis
