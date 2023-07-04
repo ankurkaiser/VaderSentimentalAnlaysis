@@ -6,7 +6,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 # Download necessary resources
-#nltk.download('vader_lexicon')
+nltk.download('vader_lexicon')
 nltk.download('averaged_perceptron_tagger')
 
 # Function to perform sentiment analysis
